@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Grid-Assignment 3</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            #header {
+                max-width: 960px;
+                width: 90%;
+                margin: 0 auto;
+                display: grid;
+            }
+            p {
+                max-width: 960px;
+                width: 90%;
+                margin: 0 auto;
+                display: grid;
+                font-size: 18px;
+            }
+            .container {
+                width: 960px;
+                max-width: 90%;
+                display: grid;
+                margin: 0 auto;
+                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+                grid-template-rows: repeat(2, 90px);
+                column-gap: 16px;
+                row-gap: 8px;
+                padding: 32px;       
+            }
+            .tile-background {
+                height: 60px;
+                background-image: url(placeholder-image.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-color: cornflowerblue;
+                box-sizing: border-box;
+            } 
+            .tile-text {
+                font-size: 18px;
+                margin: 4px 0px;
+                text-align: center;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .tile {
+                border: 1px solid cornflowerblue;
+                box-shadow: 4px 4px 8px #efefef;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            @media screen and (max-width: 1024px) {
+                p {    
+                    font-size: 18px;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                p {
+                    font-size: 17px;
+                }
+            }
+            @media screen and (max-width: 414px) {
+                p {
+                    font-size: 16px;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+    <div class="wrapper">
+        <header id="header">
+                <h2>Gallery heading</h2>
+        </header> 
+        <div class="container">    
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Cras a lacinia nisi, nec tristique sem. Cras id tellus ac mauris posuere varius.
+           Pallentesque vel mi justo. Aenean malesuada purus eu lacinia finibus. Praesent commodo euismod odio, eu pharetra nulla dignissim nec.
+           Ut id nulla augue. Duis ultricies euismod purus, ut lobortis tortor semper a. Nam eleifend accumsan elit, in elementum lacus.
+           Nunc varius imperdiet nisi, eget pretium augue molestie a. Nullam ut malesuada enim. Integer non velit fringilla, porta ex vitae, porttitor velit. 
+           Ut luctus lacinia libero a scelerisque. Ut ullamcorper arcu at mauris ullamcorper tempor.</p>
+    </div>
+     
+
+    </body>
+</html>
